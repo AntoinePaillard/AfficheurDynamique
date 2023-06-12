@@ -30,7 +30,9 @@ mkdir /home/pi/videos
 ```
 
 ## Création du script de lecture automatique des vidéos :
+```
 nano /home/pi/SCRIPT_Afficheur.sh
+```
 ```
 #!/bin/bash
 
