@@ -30,37 +30,13 @@ mkdir /home/pi/videos
 ```
 
 ## Création du script de lecture automatique des vidéos :
-```
-nano /home/pi/SCRIPT_Afficheur.sh
-```
-```
-#!/bin/bash
+Placer `SCRIPT_Afficheur.sh` et `/home/pi/SCRIPT_Mappage.sh` sous `/home/pi`
 
-# Répertoire contenant les vidéos
-videos="/home/pi/videos"
-
-# Boucle infinie
-while true; do
-    # Parcours des fichiers du répertoire
-    for file in "$videos"/*; do
-        # Vérification si le fichier est une vidéo
-        if [ -f "$file" ] && [[ "$file" == *.@(mp4|avi|mkv|mov) ]]; then
-            cvlc "$file" --no-video-title-show --play-and-exit  # Lire la vidéo avec VLC en plein écran
-        fi
-    done
-done
-```
-# Création du script de mappage automatique des vidéos :
-nano /home/pi/SCRIPT_Mappage.sh
-
-# Montage des lecteurs réseau
-sudo mount -t cifs -o username=087_Afficheur,password=Afficheur@087 //172.27.234.11/Services/Informatique/Script/PROD/Afficheurs/ENTA/BCGF_Bureau_RCAM /home/pi/videos
-
-#Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
-sudo nano /etc/rc.local
+##Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
+```sudo nano /etc/rc.local```
 
 # Et on ajoute la ligne sudo bash /home/pi/script-affichage-dynamique.sh juste avant la ligne '# Print the IP address'
-
+```
 #!/bin/sh -e
 #
 # rc.local
@@ -84,3 +60,4 @@ if [ "$_IP" ]; then
 fi
 
 exit 0
+```
