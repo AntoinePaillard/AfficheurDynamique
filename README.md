@@ -12,8 +12,12 @@ sudo apt update && sudo apt upgrade
 ```
 
 # Installation sur serveur FTP et du lecteur Vidéo (VLC)  :
+```
 sudo apt install proftpd
+```
+```
 sudo apt install vlc
+```
 
 # permet de lancer VLC en tant qu'admin
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
