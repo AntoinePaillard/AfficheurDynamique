@@ -19,7 +19,7 @@ sudo apt install proftpd
 sudo apt install vlc
 ```
 
-### permet de lancer VLC en tant qu'admin
+### Permet de lancer VLC en tant qu'admin
 ```
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
