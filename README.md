@@ -7,7 +7,9 @@
 # Configuration
 
 Mise à jour de l'OS
-`sudo apt update && sudo apt upgrade`
+`
+sudo apt update && sudo apt upgrade
+`
 
 # Installation sur serveur FTP et du lecteur Vidéo (VLC)  :
 sudo apt install proftpd
