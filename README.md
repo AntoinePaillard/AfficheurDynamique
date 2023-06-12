@@ -35,7 +35,7 @@ Placer `SCRIPT_Afficheur.sh` et `/home/pi/SCRIPT_Mappage.sh` sous `/home/pi`
 ##Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
 ```sudo nano /etc/rc.local```
 
-# Et on ajoute la ligne sudo bash /home/pi/script-affichage-dynamique.sh juste avant la ligne '# Print the IP address'
+## Et on ajoute la ligne sudo bash /home/pi/script-affichage-dynamique.sh juste avant la ligne '# Print the IP address'
 ```
 #!/bin/sh -e
 #
