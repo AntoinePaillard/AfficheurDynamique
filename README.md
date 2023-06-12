@@ -11,7 +11,7 @@ Mise à jour de l'OS
 sudo apt update && sudo apt upgrade
 ```
 
-# Installation sur serveur FTP et du lecteur Vidéo (VLC)  :
+## Installation du serveur FTP et du lecteur Vidéo (VLC)  :
 ```
 sudo apt install proftpd
 ```
@@ -19,15 +19,19 @@ sudo apt install proftpd
 sudo apt install vlc
 ```
 
-# permet de lancer VLC en tant qu'admin
+## permet de lancer VLC en tant qu'admin
+```
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
+```
 
-# Créer le dossier ou seront déposer les vidéo à lire :
+## Créer le dossier ou seront déposer les vidéo à lire :
+```
 mkdir /home/pi/videos
+```
 
-# Création du script de lecture automatique des vidéos :
+## Création du script de lecture automatique des vidéos :
 nano /home/pi/SCRIPT_Afficheur.sh
-
+```
 #!/bin/bash
 
 # Répertoire contenant les vidéos
@@ -43,7 +47,7 @@ while true; do
         fi
     done
 done
-
+```
 # Création du script de mappage automatique des vidéos :
 nano /home/pi/SCRIPT_Mappage.sh
 
