@@ -1,17 +1,17 @@
 # AfficheurDynamique
 
-# PRE-REQUIS
+## PRE-REQUIS
 - Télécharger la dernière version de RaspiOS (Buster) -> https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/
 - Utiliser Raspberry Pi Imager pour installer RaspiOS sur une carte SD -> https://www.raspberrypi.com/software/
 
-# Configuration
+## Configuration
 
-Mise à jour de l'OS
+### Mise à jour de l'OS
 ```
 sudo apt update && sudo apt upgrade
 ```
 
-## Installation du serveur FTP et du lecteur Vidéo (VLC)  :
+### Installation du serveur FTP et du lecteur Vidéo (VLC)  :
 ```
 sudo apt install proftpd
 ```
@@ -19,23 +19,23 @@ sudo apt install proftpd
 sudo apt install vlc
 ```
 
-## permet de lancer VLC en tant qu'admin
+### permet de lancer VLC en tant qu'admin
 ```
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
 
-## Créer le dossier ou seront déposer les vidéo à lire :
+### Créer le dossier ou seront déposer les vidéo à lire :
 ```
 mkdir /home/pi/videos
 ```
 
-## Création du script de lecture automatique des vidéos :
+### Création du script de lecture automatique des vidéos :
 Placer `SCRIPT_Afficheur.sh` et `/home/pi/SCRIPT_Mappage.sh` sous `/home/pi`
 
-## Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
+### Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
 ```sudo nano /etc/rc.local```
 
-## Exécution des sctips au démarrage
+### Exécution des sctips au démarrage
 ```
 #!/bin/sh -e
 #
