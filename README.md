@@ -1,11 +1,13 @@
 # AfficheurDynamique
 
+# PRE-REQUIS
+- Télécharger la dernière version de RaspiOS (Buster) -> https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/
+- Utiliser Raspberry Pi Imager pour installer RaspiOS sur une carte SD -> https://www.raspberrypi.com/software/
 
-Télécharger la dernière version de RaspiOS (Buster) -> https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/
-Utiliser Raspberry Pi Imager pour installer RaspiOS sur une carte SD -> https://www.raspberrypi.com/software/
+# Configuration
 
-# MAJ RaspiOS :
-sudo apt update && sudo apt upgrade
+Mise à jour de l'OS
+'''sudo apt update && sudo apt upgrade'''
 
 # Installation sur serveur FTP et du lecteur Vidéo (VLC)  :
 sudo apt install proftpd
