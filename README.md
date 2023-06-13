@@ -1,4 +1,4 @@
-# AfficheurDynamique
+# Afficheur Dynamique
 
 ## PRE-REQUIS
 - Télécharger la dernière version de RaspiOS (Buster) -> https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/
