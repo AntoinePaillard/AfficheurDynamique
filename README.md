@@ -1,7 +1,7 @@
 # Afficheur Dynamique
 
 ## PRE-REQUIS
-- Télécharger la dernière version de `Raspberry Pi OS Lite (Bulleyes)` : https://www.raspberrypi.com/software/operating-systems/
+- Télécharger la dernière version de `[Raspberry Pi OS Lite (Bulleyes)](https://www.raspberrypi.com/software/operating-systems/)`
 - Utiliser Raspberry Pi Imager pour installer RaspiOS sur une carte SD : https://www.raspberrypi.com/software/
 
 ## Configuration
