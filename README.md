@@ -34,10 +34,9 @@ Placer les scripts suivant sous `/home/pi`
 - `SCRIPT_Afficheur.sh`
 - `SCRIPT_Mappage_Base.sh` ou `SCRIPT_Mappage_ENTA.sh`
 
-### Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
+### Exécuter les scripts au démarrage :
 ```sudo nano /etc/rc.local```
 
-### Exécution des sctips au démarrage
 ```
 #!/bin/sh -e
 #
