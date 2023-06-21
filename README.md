@@ -35,8 +35,12 @@ Placer les scripts suivant sous `/home/pi`
 - `SCRIPT_Mappage_Base.sh` ou `SCRIPT_Mappage_ENTA.sh`
 
 ### Exécuter les scripts au démarrage :
-```sudo nano /etc/rc.local```
+Nous allons modifier le fichier `rc.local` :
+```sudo nano /etc/rc.local``` 
 
+Pour y ajouter ces 2 lignes :
+`sudo bash /home/pi/SCRIPT_Mappage.sh &
+sudo bash /home/pi/SCRIPT_Afficheur.sh`
 ```
 #!/bin/sh -e
 #
