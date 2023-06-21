@@ -1,6 +1,8 @@
 # Afficheur Dynamique
 
 ## PRE-REQUIS
+- Raspberry Pi 4 Model B 4 ou 8Go
+- Carte SD de 32 Go 
 - Télécharger la dernière version de [Raspberry Pi OS Lite (Bulleyes)](https://www.raspberrypi.com/software/operating-systems/)
 - Utiliser [Raspberry Pi Imager](https://www.raspberrypi.com/software/) pour installer RaspiOS sur une carte SD
 
