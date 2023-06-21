@@ -30,7 +30,9 @@ mkdir /home/pi/videos
 ```
 
 ### Création du script de lecture automatique des vidéos :
-Placer `SCRIPT_Afficheur.sh` et `/home/pi/SCRIPT_Mappage.sh` sous `/home/pi`
+Placer les scripts suivant sous `/home/pi`
+- `SCRIPT_Afficheur.sh`
+- `SCRIPT_Mappage_Base.sh` ou `SCRIPT_Mappage_ENTA.sh`
 
 ### Pour rendre le Raspberry Pi totalement autonome, il faut lancer ce script dès le démarrage. Il suffit d’éditer le rc.local avec :
 ```sudo nano /etc/rc.local```
