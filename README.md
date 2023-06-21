@@ -7,7 +7,7 @@
 - Utiliser [Raspberry Pi Imager](https://www.raspberrypi.com/software/) pour installer RaspiOS sur une carte SD
 
 ## Configuration
-Connectez-vous en SSH pour exécuter les commandes ci-dessous.
+Connectez-vous en SSH au Raspberry pour exécuter les commandes ci-dessous.
 ### Mise à jour de l'OS
 ```
 sudo apt update && sudo apt upgrade
