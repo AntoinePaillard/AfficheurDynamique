@@ -39,8 +39,12 @@ Nous allons modifier le fichier `rc.local` :
 ```sudo nano /etc/rc.local``` 
 
 Pour y ajouter ces 2 lignes :
-`sudo bash /home/pi/SCRIPT_Mappage.sh &
-sudo bash /home/pi/SCRIPT_Afficheur.sh`
+```
+sudo bash /home/pi/SCRIPT_Mappage.sh &
+sudo bash /home/pi/SCRIPT_Afficheur.sh
+```
+
+Comme ceci :
 ```
 #!/bin/sh -e
 #
