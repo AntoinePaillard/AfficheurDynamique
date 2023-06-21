@@ -36,8 +36,9 @@ Placer les scripts suivant sous `/home/pi`
 
 ### Exécuter les scripts au démarrage :
 Nous allons modifier le fichier `rc.local` :
-```sudo nano /etc/rc.local``` 
-
+```
+sudo nano /etc/rc.local
+``` 
 Pour y ajouter ces 2 lignes :
 ```
 sudo bash /home/pi/SCRIPT_Mappage.sh &
