@@ -5,7 +5,12 @@
 - Carte SD de 32 Go 
 - Télécharger la dernière version de [Raspberry Pi OS Lite (Bulleyes)](https://www.raspberrypi.com/software/operating-systems/)
 - Utiliser [Raspberry Pi Imager](https://www.raspberrypi.com/software/) pour installer RaspiOS sur une carte SD
-
+- Dans Raspberry Pi Imager, configurer l'image comme ceci :
+    - Activer le SSH
+    - Définir un utilisateur
+    - Ne pas configurer le Wi-Fi
+    - Définir les réglages locaux (Fuseau horaire et clavier) sur Français
+  
 ## Configuration
 Connectez-vous en SSH au Raspberry pour exécuter les commandes ci-dessous.
 ### Mise à jour de l'OS
