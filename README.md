@@ -36,9 +36,9 @@ mkdir /home/pi/videos
 ```
 
 ### Création du script de lecture automatique des vidéos :
-Placer les scripts suivant sous `/home/pi`
-- `SCRIPT_Afficheur.sh`
-- `SCRIPT_Mappage_Base.sh` ou `SCRIPT_Mappage_ENTA.sh`
+Placer ces 2 scripts suivant sous `/home/pi`
+1. `SCRIPT_Afficheur.sh`
+2. `SCRIPT_Mappage_Base.sh` ou `SCRIPT_Mappage_ENTA.sh`
 
 ### Exécuter les scripts au démarrage :
 Nous allons modifier le fichier `rc.local` :
