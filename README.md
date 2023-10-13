@@ -25,7 +25,7 @@ sudo apt install proftpd
 sudo apt install vlc
 ```
 
-### Permet de lancer VLC sans se connecter
+### Autoriser VLC à se lancer lorsque qu'aucun utilisateur n'est connecté
 ```
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
