@@ -47,7 +47,7 @@ sudo nano /etc/rc.local
 ``` 
 Pour y ajouter ces 2 lignes :
 ```
-sudo bash /home/pi/SCRIPT_Mappage.sh &
+sudo bash /home/pi/SCRIPT_Mappage_Base.sh &  # Ou sudo bash /home/pi/SCRIPT_Mappage_ENTA.sh &
 sudo bash /home/pi/SCRIPT_Afficheur.sh
 ```
 
@@ -66,7 +66,7 @@ Comme ceci :
 #
 # By default this script does nothing.
 
-sudo bash /home/pi/SCRIPT_Mappage.sh &
+sudo bash /home/pi/SCRIPT_Mappage_Base.sh &  # Ou sudo bash /home/pi/SCRIPT_Mappage_ENTA.sh &
 sudo bash /home/pi/SCRIPT_Afficheur.sh
 
 # Print the IP address
