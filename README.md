@@ -32,7 +32,7 @@ sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 
 ### Créer le dossier ou seront déposer les vidéo à lire :
 ```
-mkdir /home/pi/videos
+mkdir /home/pi/videos # + mkdir /home/pi/treville pour l'ENTA
 ```
 
 ### Création du script de lecture automatique des vidéos :
